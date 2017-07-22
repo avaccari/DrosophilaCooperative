@@ -6,7 +6,16 @@ Purpose: Track Drosphila larvae and analyze bahavior.
 Author:  Andrea Vaccari (av9g@virginia.edu)
 
 If you use our software, please cite our work:
-    <insert citation here>
+@article{dombrovski2017,
+  title={Cooperative behavior emerges amongst Drosophila larvae},
+  author={Dombrovski, Mark and Poussard, Leanne and Moalem, Kamilia and Kmecova, Lucia  and Hogan, Nic and Schott, Elisabeth and Vaccari, Andrea and Acton, Scott and Condron, Barry},
+  journal={Current biology},
+  volume={},
+  number={},
+  pages={},
+  year={2017},
+  publisher={Elsevier}
+}
 
 MIT License
 
