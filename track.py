@@ -638,6 +638,8 @@ class watch(object):
                 self.showHelp('main')
             elif key == ord('p'):
                 self.pause = not self.pause
+            elif key == ord('l'):
+                self.showHelp('license)
             else:
                 if not self.pause:
                     self.readFrame()
