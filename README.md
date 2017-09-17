@@ -1,4 +1,4 @@
-# DrosophilaCooperative
+# Drosophila Cooperative
 A python script to track and analyze the behavior of groups of Drosophila larvae.
 
 For more information please refer to our work:
