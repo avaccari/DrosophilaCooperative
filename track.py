@@ -5,23 +5,7 @@ Name:    track.py
 Purpose: Track Drosphila larvae and analyze bahavior.
 Author:  Andrea Vaccari (av9g@virginia.edu)
 
-If you use our software, please cite our work:
-@article{dombrovski_plastic_2019,
-	title = {A {Plastic} {Visual} {Pathway} {Regulates} {Cooperative} {Behavior} in {Drosophila} {Larvae}},
-	volume = {29},
-	issn = {0960-9822},
-	url = {https://www.cell.com/current-biology/abstract/S0960-9822(19)30489-0},
-	doi = {10.1016/j.cub.2019.04.060},
-	language = {English},
-	number = {11},
-	urldate = {2019-07-17},
-	journal = {Current Biology},
-	author = {Dombrovski, Mark and Kim, Anna and Poussard, Leanne and Vaccari, Andrea and Acton, Scott and Spillman, Emma and Condron, Barry and Yuan, Quan},
-	month = jun,
-	year = {2019},
-	pmid = {31130457},
-	pages = {1866--1876.e5},
-}
+If you use our software, please cite our works:
 
 @article{dombrovski_cooperative_2017,
 	title = {Cooperative {Behavior} {Emerges} among {Drosophila} {Larvae}},
@@ -37,8 +21,26 @@ If you use our software, please cite our work:
 	month = sep,
 	year = {2017},
 	pmid = {28918946},
-	keywords = {behavior, cooperation, Drosophila, learning, vision},
+	keywords = {vision, behavior, cooperation, Drosophila, learning},
 	pages = {2821--2826.e2},
+	annote = {doi: 10.1016/j.cub.2017.07.054},
+}
+
+@article{dombrovski_plastic_2019,
+	title = {A {Plastic} {Visual} {Pathway} {Regulates} {Cooperative} {Behavior} in {Drosophila} {Larvae}},
+	volume = {29},
+	issn = {0960-9822},
+	url = {https://www.cell.com/current-biology/abstract/S0960-9822(19)30489-0},
+	doi = {10.1016/j.cub.2019.04.060},
+	language = {English},
+	number = {11},
+	urldate = {2019-07-17},
+	journal = {Current Biology},
+	author = {Dombrovski, Mark and Kim, Anna and Poussard, Leanne and Vaccari, Andrea and Acton, Scott and Spillman, Emma and Condron, Barry and Yuan, Quan},
+	month = jun,
+	year = {2019},
+	pmid = {31130457},
+	pages = {1866--1876.e5},
 }
 
 Copyright (c) 2017 Andrea Vaccari
