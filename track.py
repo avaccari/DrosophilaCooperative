@@ -3,7 +3,7 @@
 Created on Fri Sep  25 19:42:41 2015
 Name:    track.py
 Purpose: Track Drosphila larvae and analyze bahavior.
-Author:  Andrea Vaccari (av9g@virginia.edu)
+Author:  Andrea Vaccari (avaccari@middlebury.edu)
 
 If you use our software, please cite our works:
 
@@ -43,7 +43,7 @@ If you use our software, please cite our works:
 	pages = {1866--1876.e5},
 }
 
-Copyright (c) 2017 Andrea Vaccari
+Copyright (c) 2023 Andrea Vaccari
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -81,9 +81,9 @@ TODO:
 import cv2
 import argparse
 import numpy as np
-import Tkinter as tk
-import tkFileDialog as tkfd
-import tkMessageBox as tkmb
+import tkinter as tk
+from tkinter import filedialog as tkfd
+from tkinter import messagebox as tkmb
 import matplotlib.pyplot as plt
 from os.path import splitext, basename
 import csv
@@ -156,7 +156,7 @@ def tubes(img, sigma_rng):
 
 
 
-class trackedArea(object):
+class trackedArea:
     def __init__(self, corners):
         if corners[0][0] < corners[1][0]:
             self.c = corners[0][0]
@@ -224,7 +224,7 @@ class trackedArea(object):
     def getEnlargedCorners(self, pxls):
         corn = self.corners - (self.w/2, self.h/2)
         corn += np.asarray([[-pxls, -pxls], [pxls, pxls]])
-        return [tuple(corn[0]), tuple(corn[1])]
+        return [tuple(corn[0].astype('int')), tuple(corn[1].astype('int'))]
 
     def getcrwh(self):
         return (self.c, self.r, self.w, self.h)
@@ -296,16 +296,16 @@ class trackedArea(object):
 
 
 
-class watch(object):
+class watch:
     def __init__(self, vid):
         if vid is None:
-            root = tk.Tk()
-            root.withdraw()
-            root.update()
-            root.iconify()
+            self.root = tk.Tk()
+            self.root.withdraw()
+            self.root.update()
+            self.root.iconify()
             vid = tkfd.askopenfilename()
 
-        if vid is '':
+        if vid == '':
             raise IOError
         else:
             self.vid = vid
@@ -703,6 +703,7 @@ class watch(object):
             pass
         cv2.destroyAllWindows()
         plt.close('all')
+        self.root.destroy()
 
 
 
@@ -728,3 +729,6 @@ if __name__ == '__main__':
         # Do you want to analyze another file?
         again = tkmb.askyesno("Analyze another?",
                               "Do you want to open another file?")
+    
+    
+    
